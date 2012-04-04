@@ -1,0 +1,15 @@
+body {
+font-size: 14px;
+line-height: 18px;
+font-family: verdana, sans-serif;
+font-weight: bold;
+font-style: italic;
+text-decoration: none;
+color: #000;
+}
+
+/* ------------------------------------------------------------------ */
+
+.index{
+	color: red;
+}
