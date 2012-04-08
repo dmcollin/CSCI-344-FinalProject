@@ -9,3 +9,9 @@ body {
 .spacer {
 	height: 50px;
 }
+
+.contentBorder{
+	border-top-style: solid;
+	border-color: gray;
+	padding-top: 15px;
+}
