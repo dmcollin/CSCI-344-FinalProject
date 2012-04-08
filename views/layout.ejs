@@ -1,40 +1,90 @@
 <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Title to be Named Later</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
 
-<html>
-	<head>
-		<link rel="stylesheet" href="stylesheets/lib/bootstrap/docs/assets/css/bootstrap.css"/>	
-		<link rel="stylesheet" href="stylesheets/src/style.css" />
-		<title>Title to be Named Later</title>
+    <!-- Le styles -->
+    <link rel="stylesheet" href="stylesheets/lib/bootstrap/docs/assets/css/bootstrap.css"/>	
+	<link rel="stylesheet" href="stylesheets/src/style.css" />
 
-	</head>
+  </head>
 
-	<body>
-		<div class="container">
-			<div class="navbar">
-				<ul class="nav">
-					<li class="active">
-						<a href="index.html">Home</a></li>
-						<li><a href="#">Links</a></li>
-						<li><a href="#">Code</a></li>
-				</ul>
-			</div>
-			<div class = "row">
-				<div class = "span12 spacer">
+  <body>
+
+    <div class="navbar navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container-fluid">
+          <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </a>
+          <div class="nav-collapse">
+            <ul class="nav">
+              <li class="active"><a href="#">Home</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+            <p class="navbar-text pull-right">Logged in as <a href="#">username</a></p>
+          </div><!--/.nav-collapse -->
+        </div>
+      </div>
+    </div>
+
+
+
+    <div class="container-fluid">
+     <div class="row-fluid">     
+        <div class="span9">
+	
+            <div class="container">
+            	<div class="row-fluid">     
+        			<div class="span9">
+						<h2>Logo & Title</h2>
+   	 					<p>Some blurb here?</p>
+   	 				</div>
+   	 			</div>
+   	 			<div class = "row">
+					<div class = "span9 spacer">
+					</div>
 				</div>
-			</div>
-			<div class = "row">
-				<div class = "span8">
-					<p>This is where the code goes</p>
-				</div>
-				<div class = "span4">
-				<p>Sidebar!</p>
-				</div>
-			</div>
-			<div class = "row">
-				<div class = "span12">
-				<p>Footer!</p>
-				</div>
-			</div>
-		</div>
-	</body>
+
+				<%- body %>
+            </div>
+
+        </div><!--/span-->
+
+        <div class="span3">
+          <div class="well sidebar-nav">
+          	<form class="well form-search">  
+  				<input type="text" class="input-medium search-query">  
+  				<button type="submit" class="btn">Search</button>  
+			</form>  
+            <ul class="nav nav-list">
+              <li class="nav-header">Recent Searches</li>
+              <li><a href="#">Link here</a></li>
+              <li><a href="#">Another link here</a></li>
+              <li><a href="#">And one more link here</a></li>
+              <li class="nav-header">Popular Searches</li>
+              <li><a href="#">Link here</a></li>
+              <li><a href="#">Another link here</a></li>
+              <li><a href="#">And one more link here</a></li>
+            </ul>
+          </div><!--/.well -->
+        </div><!--/span-->
+      </div><!--/row-->
+
+      <hr>
+
+      <footer>
+        <p>Some BS Here</p>
+      </footer>
+
+    </div><!--/.fluid-container-->
+
+  </body>
 </html>
